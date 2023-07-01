@@ -1,6 +1,7 @@
-import user from '../user.json'
+import user from '../data/user'
 import {Profile} from './Profile/Profile'
-
+import { Statistics } from './Statistics/Statistics';
+import data from '../data/data'
 
 
 export const App = () => {
@@ -9,10 +10,11 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
+        fontSize: 30,
+        color: '#010101',
       }}
     >
       <Profile
@@ -21,10 +23,8 @@ export const App = () => {
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
-        // followers={user.stats.followers}
-        // views={user.stats.views}
-        // likes={user.stats.likes}
       />
+      <Statistics title="Upload stats" stats={data} />
     </div>
   );
 };
