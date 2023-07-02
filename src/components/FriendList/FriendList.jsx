@@ -2,20 +2,22 @@ import { FriendListItem } from "components/FriendListItem/FriendListItem";
 import PropsTypes from 'prop-types';
 
 export function FriendList({friends}) {
-    return <ul className="friend-list">
+    return (<ul className="friend-list">
         {friends.map((friend) => {
             return (<FriendListItem
                 avatar={friend.avatar}
                 name={friend.name}
                 isOnline={friend.isOnline}
-                key= {friend.id}
+                key={friend.id}
             />);
             
- })}
+        })}
         
-</ul>
+    </ul>);
 }
 
+
+
 FriendList.propsTypes = {
-    friends: PropsTypes.arrayOf
+    friends: PropsTypes.arrayOf(PropsTypes.shape({id: PropsTypes.number.isRequired}).isRequired).isRequired
 }

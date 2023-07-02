@@ -1,14 +1,16 @@
 .statList{
     display: flex;
     justify-content: space-around;
-    width: 400px;
-    border: 1px solid black;
-    border-radius: 5px;
+    width: 300px;
+   
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 20px;
+    background-color: #fff;
 }
 
 .title{
-    width: 400px;
-        border: 1px solid black;
-        border-radius: 5px;
-        font-size: inherit;
+    width: 300px;
+    border-radius: 5px 5px 0 0;
+    font-size: inherit;
+    background-color: #fff;
 }
