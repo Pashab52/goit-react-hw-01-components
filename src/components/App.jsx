@@ -4,14 +4,14 @@ import { Statistics } from './Statistics/Statistics';
 import data from '../data/data';
 import { FriendList } from './FriendList/FriendList';
 import friends from '../data/friends'
-
+import {TransactionHistory} from './TransactionHistory/TransactionHistory'
+import transactions from '../data/transactions'
 
 
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -29,6 +29,9 @@ export const App = () => {
       />
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
+
+

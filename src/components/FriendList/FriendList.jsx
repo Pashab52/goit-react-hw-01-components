@@ -18,6 +18,6 @@ export function FriendList({friends}) {
 
 
 
-FriendList.propsTypes = {
+FriendList.PropsTypes = {
     friends: PropsTypes.arrayOf(PropsTypes.shape({id: PropsTypes.number.isRequired}).isRequired).isRequired
 }
