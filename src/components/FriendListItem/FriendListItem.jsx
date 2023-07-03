@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import css from './FriendListItem.module.css'
 
 
+
 export function FriendListItem({avatar,
 name,
 isOnline}) {
