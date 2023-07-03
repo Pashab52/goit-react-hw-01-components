@@ -1,18 +1,34 @@
 .statList{
     display: flex;
-    
     width: 300x;
     
-    border-radius: 0 0 5px 5px;
-    margin-bottom: 20px;
     background-color: #fff;
+    
+    
 }
 
 
 
 .title{
     width: 300px;
-    border-radius: 5px 5px 0 0;
+    border-radius: 3px;
     font-size: inherit;
     background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.statistics{
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 2px;
+    margin-bottom: 20px;
+}
+.statistics:hover{
+    overflow:visible
+}
+
+
+.label{
+    font-size: 16px;
 }
