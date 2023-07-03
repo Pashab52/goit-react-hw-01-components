@@ -35,3 +35,6 @@ overflow: hidden;
 }
 
 
+.transactionHistory tr:hover{
+    background-color: lightgoldenrodyellow;
+}
